@@ -4,7 +4,6 @@ import prisma from '@/prisma/client';
 
 export async function POST(request: NextResponse) {
   const body = await request.json();
-  console.log(body);
 
   // implement request validation with zod
   const createIssueSchema = z.object({
